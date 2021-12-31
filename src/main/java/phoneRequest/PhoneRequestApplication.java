@@ -1,8 +1,9 @@
-package example.phoneRequest;
+package phoneRequest;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import phoneRequest.restTemplate.PhoneDTO;
+import phoneRequest.restTemplate.PhoneRestTemplateService;
 
 import java.util.List;
 import java.util.Map;
@@ -13,6 +14,11 @@ public class PhoneRequestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PhoneRequestApplication.class, args);
+
+	}
+
+	// restTemplate
+	public static void phoneRestTemplateRequest(){
 		PhoneRestTemplateService phoneRestTemplateService = new PhoneRestTemplateService();
 
 		//getString

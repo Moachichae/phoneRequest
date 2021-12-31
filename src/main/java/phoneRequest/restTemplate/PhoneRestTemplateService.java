@@ -1,4 +1,4 @@
-package example.phoneRequest;
+package phoneRequest.restTemplate;
 
 import org.springframework.web.client.RestTemplate;
 
