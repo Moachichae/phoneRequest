@@ -1,18 +1,22 @@
 package phoneRequest.restTemplate;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import phoneRequest.PhoneDTO;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class PhoneRestTemplateService {
 
     private final RestTemplate restTemplate;
 
-    public PhoneRestTemplateService() {
-        restTemplate = new RestTemplate();
+    public PhoneRestTemplateService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
     }
 
     public String[] getPhoneString() {

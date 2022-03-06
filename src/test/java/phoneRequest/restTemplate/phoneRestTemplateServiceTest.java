@@ -2,6 +2,8 @@ package phoneRequest.restTemplate;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import phoneRequest.PhoneDTO;
 
 import java.util.List;
 import java.util.Map;
@@ -9,7 +11,8 @@ import java.util.Map;
 @Slf4j
 class phoneRestTemplateServiceTest {
 
-    PhoneRestTemplateService phoneRestTemplateService = new PhoneRestTemplateService();
+    @Autowired
+    PhoneRestTemplateService phoneRestTemplateService;
 
     @Test
     void getPhoneString() {

@@ -1,4 +1,4 @@
-package phoneRequest.restTemplate;
+package phoneRequest;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
