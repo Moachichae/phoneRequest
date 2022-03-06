@@ -14,9 +14,7 @@ class PhoneWebClientServiceTest {
     @Test
     public void webClientTest() throws Exception {
        //List
-        System.out.println("getPhoneList = ");
          PhoneDTO phoneDTO = (PhoneDTO) phoneWebClientService.getPhoneList().block().get(0);
-        System.out.println("이걸 어떻게 해야하지"+phoneDTO.toString());
 
 
 
